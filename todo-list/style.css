@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,58,153,1) 52%, rgba(9,14,124,1) 100%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    min-height: 100vh;   
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #fff;
+}
+
+form button{
+    color: blue;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+form button:hover{
+    background: rgb(53, 53, 134);
+    color: #fff;
+}
