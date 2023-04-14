@@ -93,7 +93,7 @@ form button:hover{
 }
 
 .todo-item{
-    padding: 0rem 0.5rem;
+    padding: 0rem 0.5rem; 
 }
 
 .fa-trash, .fa-check{
@@ -108,4 +108,41 @@ form button:hover{
 .fall{
     transform: translateY(8rem) rotateZ(25deg);
     opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: rgb(53, 53, 133);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1.14rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: rgb(53, 53, 133);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.select:hover::after{
+    background: #fff;
+    color: rgb(53, 53, 133);
 }
