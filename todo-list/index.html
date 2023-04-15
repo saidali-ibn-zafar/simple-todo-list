@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Todo List</title>
+    <title>ToDo-List</title>
 </head>
+
 <body>
-    
     <header>
-        <h1>Todo List</h1>
+        <h1>Todo-List</h1>
     </header>
-    <form>
+    <form action="">
         <input type="text" class="todo-input">
         <button class="todo-button" type="submit">
             <i class="fas fa-plus-square"></i>
@@ -24,19 +28,16 @@
         <div class="select">
             <select name="todos" class="filter-todo">
                 <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
+                <option value="completed">completed</option>
+                <option value="uncompleted">uncompleted</option>
             </select>
         </div>
     </form>
-
     <div class="todo-container">
-        <ul class="todo-list">
-            
-        </ul>
+        <ul class="todo-list"></ul>
     </div>
 
-
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
